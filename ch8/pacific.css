@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+/* new stuff */
+
+table {
+    border: collapse;
+    margin: auto;
+    border: 1px solid #3399CC;
+    width: 90%;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #3399CC;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+/* new stuff */
+
+body {
+    background-color: #EAEAEA;
+    color: #666666;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+    font-family: Georgia, sans-serif;
+    padding: 1em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link{
+    color: #FFFFFF;
+}
+
+header a:hover{
+    color: #90C7E3;
+}
+
+header a:visited{
+    color: #ffffff;
+}
+
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, sans-serif;
+}
+
+h3 {
+    font-family: Georgia, sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.2em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #A52A2A;
+}
+
+nav a:visited{
+    color: #344873;
+}
+
+nav a:link{
+    color: #5C7FA3;
+}
+
+nav ul{
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1em;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: solid 1px;
+}
+
+dt {
+    color: #002171;
+    font-weight: bold;
+}
+
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+
+footer {
+    font-size: 0.70em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+section{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#wrapper {
+    background-color: #ffffff;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coast.jpg);
+    background-size: 200% 100%;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-size: 200% 100%;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 200% 100%;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop{
+    display: none;
+}
+
+/* Medium Display */
+
+@media (min-width: 600px) {
+h1 {
+    font-size: 2em;
+    letter-spacing: .25em;
+}
+
+nav li {
+    width: 12em;
+    border-bottom: none;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding-right: 2em;
+}
+
+/* main {
+    float: left;
+} */
+
+section {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#flow {
+    display: flex;
+    flex-direction: row;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#homehero {
+    background-size: 100% 100%;
+}
+
+#yurtero {
+    background-size: 100% 100%;
+}
+
+#trailhero {
+    background-size: 100% 100%;
+}
+
+}
+
+/* Large Display */
+
+@media (min-width: 1024px){
+body {
+    background: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%)
+}
+
+nav ul {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#wrapper {
+    margin: auto;
+    width: 80%;
+}
+}
