@@ -81,9 +81,7 @@ h3 {
 nav {
     text-align: center;
     background-color: #FFFFFF;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 0.5em;
+    font-weight: bold;
     font-size: 1.2em;
 }
 
@@ -106,7 +104,6 @@ nav a:link{
 nav ul{
     flex-direction: column;
     text-decoration: none;
-    padding: 1em;
     list-style-type: none;
     margin: 0;
     padding-left: 0;
