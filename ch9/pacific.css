@@ -247,7 +247,7 @@ input, textarea{
         display: grid;
         width: 60%;
         grid-gap: 1em;
-        grid-template-columns: 10em fr; 
+        grid-template-columns: 10em; 
     }
 
     input[type="submit"] {
