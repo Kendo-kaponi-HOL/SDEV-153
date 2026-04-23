@@ -89,10 +89,6 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
-    color: #A52A2A;
-}
-
 nav a:visited{
     color: #344873;
 }
@@ -100,6 +96,11 @@ nav a:visited{
 nav a:link{
     color: #5C7FA3;
 }
+
+nav a:hover{
+    color: #A52A2A;
+}
+
 
 nav ul{
     flex-direction: column;
