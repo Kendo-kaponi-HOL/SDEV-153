@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #0D0D0F;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(10px);
+}
+
+body.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Top of Page */
+
+nav {
+    text-align: center;
+    background-color: #1E1F22;
+    border-bottom: 4px solid #7A3FF2;
+    padding-top: 16px;
+    margin-top: 8px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #D9D9E0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF4EDB;
+    text-shadow: 0 0 10px #FF4EDB, 0 0 20px #7A3FF2, 0 0 30px #00FFFF;
+}
+
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li{
+    margin: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+header {
+    background-color: #1E1F22;
+    padding: 2em;
+    font-family: helvetica, Georgia;
+    text-align: center;
+    border-top: 4px solid #7A3FF2;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+header a {
+    text-decoration: none;
+    color:#D9D9E0;
+}
+
+header a:hover {
+    color: #FF4EDB;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(90deg, #7A3FF2, #FF4EDB, #00FFFF);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    animation: glowShift 4s ease-in-out infinite;
+}
+
+@keyframes glowShift {
+    0% { text-shadow: 0 0 10px #7A3FF2; }
+    50% { text-shadow: 0 0 20px #FF4EDB; }
+    100% { text-shadow: 0 0 10px #00FFFF; }
+}
+
+
+/* PrismArc Logo */
+.logo {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 12px #7A3FF2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 18px #FF4EDB);
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+
+/* Content of Page */
+
+#wrapper {
+    max-width: 2800px;
+    margin-top: 40px;
+    padding: 0 2em;
+}
+
+.flow {
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 32px;
+    background-color: #1E1F22;
+    border-radius: 8px;
+    border: 2px solid #7A3FF2;
+    box-shadow: 0 0 12px #7A3FF2;
+}
+
+main {
+    margin: 2em;
+}
+
+h2 {
+    color:#D9D9E0;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color:#D9D9E0;
+}
+
+p {
+    color:#D9D9E0;
+}
+
+.cta-button{
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #7A3FF2;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+    margin: 2em;
+    
+}
+
+.cta-button:hover{
+    background-color: #FF4EDB;
+}
+
+/* Form  styles*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    margin-top: 1.5em;
+}
+
+.contact-form label {
+    color: #D9D9E0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #0F0F11;
+    border: 2px solid #2A2A2D;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #7A3FF2;
+    box-shadow: 0 0 12px #7A3FF2;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8A8A90;
+}
+
+.contact-form .cta-button {
+    width: fit-content;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+
+
+/* Heros */
+
+#homehero {
+    background-image: url();
+}
+
+#producthero {
+    background-image: url(PrismArc.png);
+}
+
+#featureshero {
+    background-image: url();
+}
+
+#abouthero {
+    background-image: url();
+}
+
+#contacthero {
+    background-image: url();
+}
+
+#supporthero {
+    background-image: url();
+}
+
+/* Footer */
+
+footer {
+
+}
+
+/* Animations */
+
+/* Base animation state */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delayed Animations */
+
+.reveal:nth-child(1) { transition-delay: 0.1s; }
+.reveal:nth-child(2) { transition-delay: 0.2s; }
+.reveal:nth-child(3) { transition-delay: 0.3s; }
+
+/* Media Query's */
+
+/* Smartphones (max 480px) */
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    nav li {
+        margin: 0.8em 0;
+    }
+
+    header {
+        padding: 1.5em 1em;
+    }
+
+    #wrapper {
+        padding: 0 1em;
+        margin-top: 24px;
+    }
+
+    .flow {
+        padding: 16px 20px;
+        margin: 24px auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        margin: 1.2em auto;
+    }
+
+    .logo {
+        height: 48px;
+    }
+}
+
+/* Smartphones (max 768px) */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    nav li {
+        margin: 1em 0;
+    }
+
+    #wrapper {
+        padding: 0;
+    }
+
+    .flow {
+        padding: 20px 24px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+/* Tablets & Small Laptops (max 1024px) */
+@media (max-width: 1024px) {
+
+    nav li {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #wrapper {
+        max-width: 1100px;
+    }
+
+    .flow {
+        max-width: 900px;
+    }
+}
+
+
+/* Desktops (min-width: 1600px) */
+@media (max-width: 1600px) {
+
+    #wrapper {
+        max-width: 1500px;
+    }
+
+    .flow {
+        max-width: 1300px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 2540px) {
+    #wrapper {
+        max-width: 2000px;
+    }
+
+    .flow {
+        max-width: 1800px;
+    }
+}
