@@ -11,6 +11,9 @@
     <body>
         <header>
             <h1><a href="index.html">PrismArc</a></h1>
+            <a href="index.html" class="logo-link">
+                <img src="prismarc-logo.png" alt="PrismArc Logo" class="logo">
+            </a>
         </header>
         <nav>
             <ul>
@@ -26,7 +29,38 @@
             <div id="supporthero"></div>
             <main>
                 <div class="flow">
-                    <section></section>
+                    <section>
+                        <form class="contact-form" action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" required>
+
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="issue-type">Issue Type</label>
+                            <select id="issue-type" name="issue-type" required>
+                                <option value="">Select an issue…</option>
+                                <option value="account">Account Problem</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="technical">Technical Issue</option>
+                                <option value="feedback">General Feedback</option>
+                            </select>
+
+                            <label for="priority">Priority Level</label>
+                            <select id="priority" name="priority" required>
+                                <option value="normal">Normal</option>
+                                <option value="high">High</option>
+                                <option value="urgent">Urgent</option>
+                            </select>
+
+                            <label for="details">Describe Your Issue</label>
+                            <textarea id="details" name="details" rows="6" required></textarea>
+
+                            <button type="submit" class="cta-button">Submit Support Request</button>
+                        </form>
+
+                    </section>
                 </div>
             </main>
         </div>

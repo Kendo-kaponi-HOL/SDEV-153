@@ -145,6 +145,50 @@ h2, h3, p {
 }
 
 
+    /* TABLE */
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+
+.features-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    background-color: #1E1F22;
+    border: 2px solid #7A3FF2;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 12px #7A3FF2;
+}
+
+.features-table th,
+.features-table td {
+    padding: 16px 20px;
+    text-align: left;
+    color: #D9D9E0;
+}
+
+.features-table th {
+    background-color: #2A2B2F;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-bottom: 2px solid #7A3FF2;
+}
+
+.features-table tr:nth-child(even) {
+    background-color: #242529;
+}
+
+.features-table tr:hover {
+    background-color: #2F2F33;
+    transition: background-color 0.3s ease;
+}
+
+
    /* BUTTONS */
 
 
@@ -244,6 +288,11 @@ h2, h3, p {
     height: 400px;
 }
 
+#supporthero {
+    background-image: url(support.png);
+    height: 400px;
+}
+
    /* SCROLL REVEAL ANIMATIONS */
 
 
@@ -281,6 +330,43 @@ h2, h3, p {
     .flow { padding: 20px 24px; }
     h1 { font-size: 2rem; }
     .logo { height: 60px; }
+
+        .features-table thead {
+        display: none;
+    }
+
+    .features-table,
+    .features-table tbody,
+    .features-table tr,
+    .features-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .features-table tr {
+        margin-bottom: 1.5em;
+        background-color: #1E1F22;
+        border: 1px solid #7A3FF2;
+        border-radius: 8px;
+        padding: 1em;
+        box-shadow: 0 0 10px #7A3FF2;
+    }
+
+    .features-table td {
+        padding: 10px 0;
+        text-align: left;
+        position: relative;
+    }
+
+    .features-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #FF4EDB;
+        display: block;
+        margin-bottom: 4px;
+        text-shadow: 0 0 6px #7A3FF2;
+    }
+}
 }
 
 /* Small Laptops */
