@@ -367,7 +367,6 @@ h2, h3, p {
         text-shadow: 0 0 6px #7A3FF2;
     }
 }
-}
 
 /* Small Laptops */
 @media (max-width: 1024px) {
